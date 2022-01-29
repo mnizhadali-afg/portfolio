@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@100;300&display=swap');
+
+/************* Root Styles *************/
+:root {
+  --clr-alice-blue: rgba(242, 245, 248, 0.342);
+  --clr-bright-white: rgb(219, 216, 216);
+  --clr-nav-color: rgb(255, 254, 254);
+  --clr-border-color: rgb(203, 227, 247);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/************* body Styles *************/
+body {
+  background-color: var(--clr-alice-blue);
+  font-family: 'Outfit', sans-serif;
+}
+
+/************* nav Styles *************/
+.bg-custom {
+  background-color: var(--clr-nav-color);
+}
+
+.img-logo {
+  max-width: 3rem;
+  border: 0.1875rem double var(--clr-border-color);
+  border-radius: 50%;
+  padding: 0.0625rem;
+}
+
+.img-logo:hover {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0.8;
+  border: 0.1875rem double var(--clr-border-color);
+  border-radius: 50%;
+}
+
+.brand-name {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 1.625rem;
+  text-transform: capitalize;
+  opacity: 0.925;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.brand-name:hover {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-item {
+  font-size: 1rem;
+  margin-right: 1.25rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+/************* hero-section Styles *************/
+.hero-section {
+  background: url("../images/pexels-gdtography-911758.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+}
+
+.card-section {
+  display: flex;
+  max-width: 85%;
+  margin: 8rem auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card-section-text {
+  padding: 3rem 4rem;
+  background-color: #eceff0c4;
+}
+
+.card-section-img {
+  background: url("../images/profile.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center;
+  max-width: 50%;
+}
+
+.card-section-desc {
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+}
+
+.btn-dark {
+  padding: .5rem 2.25rem;
+  text-transform: capitalize;
+}
+
+.btn-dark:hover {
+  text-decoration: underline;
+}
+
+.hero-title {
+  font-weight: bolder;
+  font-size: 5rem;
+  color: rgb(19, 18, 18);
+}
+
+/************* slider-mini Styles *************/
+.icons-png {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+/************* custom-divider Styles *************/
+.custom-divider {
+  border-bottom: .5rem dotted grey;
+  width: 10%;
+  margin: 5rem auto;
+}
+
+/************* courses Styles *************/
+.courses {
+  padding: 2rem 0;
+}
+
+.course-title {
+  border-bottom: .0125rem dotted grey;
+  padding-bottom: .5rem;
+}
+
+.course-description {
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+.course-image {
+  max-height: 45vh;
+}
+
+/************* parallex Styles *************/
+.parallex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/pexels-cottonbro-5483077.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.since {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.parallex-desc {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+/************* card Styles *************/
+.card {
+  border: none;
+  border-radius: 0;
+  padding-bottom: 1rem;
+}
+
+.card-img-top {
+  border-top-right-radius: none !important;
+  border-top-left-radius: none;
+}
+
+.author,
+.date {
+  font-size: .8rem;
+}
+
+/************* footer Styles *************/
+footer {
+  padding: 5rem 0;
+  min-height: 50vh;
+  background-color: rgb(50, 50, 50);
+}
+
+.links ul li {
+  color: var(--clr-bright-white);
+  list-style-type: none;
+  margin-bottom: .5rem;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Outfit", sans-serif;
+}
+
+.links ul li:first-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  cursor: text;
+}
